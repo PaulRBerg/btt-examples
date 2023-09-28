@@ -4,7 +4,7 @@ A collection of examples for [Branching Tree Technique](https://twitter.com/Paul
 is a simple specification framework for writing structured Solidity tests.
 
 The first step is to define a tree structure in a `.tree` file. Then, use
-[Bulloak](https://github.com/alexfertel/bulloak) to scaffold a skeleton Solidity file. Finally, write your tests!
+[Bulloak](https://github.com/alexfertel/bulloak) to scaffold a skeleton Solidity file. Finally, write your tests.
 
 ## VSCode
 
@@ -14,6 +14,13 @@ The following VSCode extensions are not essential but they are recommended for a
   files
 - [Ascii Tree Generator](https://marketplace.visualstudio.com/items?itemName=aprilandjan.ascii-tree-generator):
   convenient way to generate ASCII trees
+
+## Other Examples
+
+BTT in the wild:
+
+- Sablier [V2 Core](https://github.com/sablier-labs/v2-core)
+- Sablier [V2 Periphery](https://github.com/sablier-labs/v2-periphery)
 
 ## License
 

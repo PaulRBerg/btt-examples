@@ -1,0 +1,5 @@
+SimpleWhenTest
+├── when x is false
+│   └── it should revert
+└── when x is true
+    └── it should return x

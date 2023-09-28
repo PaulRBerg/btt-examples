@@ -1,0 +1,4 @@
+BundledItsTest
+├── it should update storage
+├── it should emit an event
+└── it should return x

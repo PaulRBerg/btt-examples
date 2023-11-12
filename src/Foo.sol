@@ -9,7 +9,7 @@ contract Foo {
         value = newValue;
     }
 
-    function simpleWhen(bool x) public pure returns (bool) {
+    function when(bool x) public pure returns (bool) {
         if (!x) {
             revert("x must not be false");
         } else {
@@ -17,7 +17,7 @@ contract Foo {
         }
     }
 
-    function simpleGiven() public view returns (uint256) {
+    function given() public view returns (uint256) {
         if (value < 100) {
             revert("value must not be less than 100");
         } else {
@@ -34,8 +34,8 @@ contract Foo {
     }
 
     function givenWhen(bool x) external view returns (uint256, bool) {
-        uint256 result0 = simpleGiven();
-        bool result1 = simpleWhen(x);
+        uint256 result0 = given();
+        bool result1 = when(x);
         return (result0, result1);
     }
 
@@ -43,8 +43,8 @@ contract Foo {
         if (msg.sender != address(0xcafe)) {
             revert("the caller must be 0xcafe");
         }
-        uint256 result0 = simpleGiven();
-        bool result1 = simpleWhen(x);
+        uint256 result0 = given();
+        bool result1 = when(x);
         return (result0, result1);
     }
 }
